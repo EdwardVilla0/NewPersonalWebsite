@@ -9,6 +9,10 @@ app.get("/", function(req, res){
   res.render("landing");
 });
 
+app.get("/museum", function(req, res){
+  res.render("museum");
+});
+
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
   console.log("server started");
 });
